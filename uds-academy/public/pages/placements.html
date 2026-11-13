@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Placements | UD&apos;S Academy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <header class="page-hero"><div class="container"><h1>Placements</h1><p>Results, recruiters, and alumni.</p></div></header>
+  <main class="container">
+
+<div id="stats" class="grid grid-3"></div>
+<h2>Students placed each year</h2>
+<div id="chart" class="bars" role="img" aria-label="Bar chart of students placed each year"></div>
+<h2>Our recruiters</h2>
+<div class="chips"><div id="recruiters"></div></div>
+<h2>How placements work</h2>
+<ol class="steps">
+  <li><strong>Training</strong><br>Aptitude and coding practice from semester 5.</li>
+  <li><strong>Mock interviews</strong><br>With alumni and industry guests.</li>
+  <li><strong>Company visits</strong><br>Recruiters come to campus.</li>
+  <li><strong>Interviews</strong><br>Written test and interviews.</li>
+  <li><strong>Offer</strong><br>Offer letters before graduation.</li>
+</ol>
+<h2>Success stories</h2>
+<div id="stories" class="grid grid-2"></div>
+<h2>Alumni</h2>
+<div class="form-group"><label for="batch">Batch</label><select id="batch"><option value="">All batches</option></select></div>
+<div id="alumni" class="grid grid-2"></div>
+<h2>Join the alumni network</h2>
+<div id="alumniMsg"></div>
+<form id="alumniForm" class="card" novalidate>
+  <div class="grid grid-2"><div class="form-group"><label for="a_name">Full name</label><input type="text" id="a_name" name="a_name" ><span class="error-msg"></span></div><div class="form-group"><label for="a_batch">Batch year</label><input type="number" id="a_batch" name="a_batch" min="2000" max="2035"><span class="error-msg"></span></div></div>
+  <div class="grid grid-2"><div class="form-group"><label for="a_company">Company</label><input type="text" id="a_company" name="a_company" ><span class="error-msg"></span></div><div class="form-group"><label for="a_role">Role</label><input type="text" id="a_role" name="a_role" ><span class="error-msg"></span></div></div>
+  <div class="form-group"><label for="a_text">Your message to students</label><textarea id="a_text" rows="3"></textarea></div>
+  <button class="btn" type="submit">Join</button>
+</form>
+  </main>
+  <div id="footer"></div>
+  <script src="../js/api.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/placements.js"></script>
+</body>
+</html>

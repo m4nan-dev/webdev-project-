@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UD&apos;S Academy | Learn. Build. Lead.</title>
+  <meta name="description" content="UD&apos;S Academy: engineering programs in Computer Science, Electronics, and AI and Data Science.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <!-- Hero slider -->
+  <section class="slider" id="slider" aria-label="Highlights">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="https://placehold.co/1400x420/18427C/F2B632?text=UD%27S+Academy" alt="UD&apos;S Academy campus">
+        <div class="slide-caption"><h1>Welcome to UD&apos;S Academy</h1><p>Learn by building real projects from your first semester.</p><a class="btn btn-gold" href="pages/apply.html">Apply now</a></div>
+      </div>
+      <div class="slide">
+        <img src="https://placehold.co/1400x420/102f59/F2B632?text=Labs+and+Projects" alt="Students working in a computer lab">
+        <div class="slide-caption"><h1>Labs where ideas become working things</h1><p>Twelve labs across three departments, open six days a week.</p><a class="btn btn-gold" href="pages/departments.html">Explore departments</a></div>
+      </div>
+      <div class="slide">
+        <img src="https://placehold.co/1400x420/18427C/ffffff?text=Placements" alt="Graduating students celebrating">
+        <div class="slide-caption"><h1>Graduates hired by leading companies</h1><p>See placement results, recruiters, and student stories.</p><a class="btn btn-gold" href="pages/placements.html">View placements</a></div>
+      </div>
+    </div>
+    <button class="slider-btn prev" id="prev" aria-label="Previous slide">&#10094;</button>
+    <button class="slider-btn next" id="next" aria-label="Next slide">&#10095;</button>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- Announcement ticker -->
+  <div class="ticker" role="marquee" aria-label="Latest announcements">
+    <span class="ticker-label">Latest</span>
+    <div class="ticker-track" id="ticker"><span>Loading announcements...</span></div>
+  </div>
+
+  <main class="container">
+    <!-- About + Director -->
+    <section class="about-split">
+      <div>
+        <h2>About UD&apos;S Academy</h2>
+        <p>Founded in 2010, UD&apos;S Academy is an engineering college built around one idea: students learn best by making things. Every semester includes a project, every department has working labs, and industry partners help shape our courses.</p>
+        <p>Our programs in Computer Science, Electronics and Communication, and Artificial Intelligence and Data Science prepare graduates for careers in software, hardware, and data.</p>
+        <a class="btn" href="pages/about.html">Read more about us</a>
+      </div>
+      <div class="card message">
+        <img src="https://placehold.co/200x200?text=Director" alt="Portrait of the Director">
+        <div><h3>From the Director</h3><p>Come to build, break, and rebuild. That is how engineers are made.</p><p><strong>Dr. Arjun Mehta</strong></p></div>
+      </div>
+    </section>
+
+    <!-- Counters -->
+    <section class="stats reveal" aria-label="UD&apos;S Academy in numbers">
+      <div><strong data-count="2200">0</strong>Students</div>
+      <div><strong data-count="120">0</strong>Faculty</div>
+      <div><strong data-count="16">0</strong>Years of teaching</div>
+      <div><strong data-count="1800">0</strong>Placements</div>
+    </section>
+
+    <!-- Announcements and news -->
+    <section>
+      <h2>Announcements and updates</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" id="tab-announcement" data-type="announcement" role="tab">Announcements</button>
+        <button class="tab" id="tab-student" data-type="student" role="tab">Student news</button>
+      </div>
+      <div class="card">
+        <ul class="news-list" id="news"></ul>
+        <p><a href="pages/announcements.html">View all announcements</a></p>
+      </div>
+    </section>
+
+    <!-- Quick access -->
+    <section>
+      <h2>Quick access</h2>
+      <div class="grid grid-3">
+        <a class="tile" href="pages/placements.html"><strong>Placements</strong><span>Packages, recruiters, success stories</span></a>
+        <a class="tile" href="pages/faculty.html"><strong>Faculty</strong><span>Find teachers by name or department</span></a>
+        <a class="tile" href="pages/departments.html"><strong>Departments</strong><span>Labs, research, and faculty</span></a>
+        <a class="tile" href="pages/announcements.html"><strong>Achievements</strong><span>Student wins and college news</span></a>
+        <a class="tile" href="pages/gallery.html"><strong>Gallery</strong><span>Photos from campus life</span></a>
+        <a class="tile" href="pages/events.html"><strong>Events</strong><span>Upcoming fests and talks</span></a>
+      </div>
+    </section>
+
+    <!-- Student corner -->
+    <section>
+      <h2>Student corner</h2>
+      <div class="grid grid-3">
+        <a class="tile" href="pages/admission.html"><strong>Admission</strong><span>Process, eligibility, important dates</span></a>
+        <a class="tile" href="pages/facilities.html#library"><strong>Library</strong><span>Timings and e-resources</span></a>
+        <a class="tile" href="pages/admission.html#scholarship"><strong>Scholarship</strong><span>Merit and need-based aid</span></a>
+        <a class="tile" href="pages/curriculum.html"><strong>Curriculum</strong><span>Subjects by semester</span></a>
+        <a class="tile" href="pages/calendar.html"><strong>Academic calendar</strong><span>Classes, exams, holidays</span></a>
+        <a class="tile" href="pages/clubs.html"><strong>Clubs</strong><span>Technical, cultural, and sports</span></a>
+      </div>
+    </section>
+
+    <!-- Events carousel -->
+    <section>
+      <h2>Events</h2>
+      <div class="carousel-btns">
+        <button class="btn" id="ev-prev" aria-label="Scroll events left">&#10094;</button>
+        <button class="btn" id="ev-next" aria-label="Scroll events right">&#10095;</button>
+      </div>
+      <div class="carousel" id="events"><div class="spinner">Loading events...</div></div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="js/api.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

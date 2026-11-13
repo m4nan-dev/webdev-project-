@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apply online | UD&apos;S Academy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <header class="page-hero"><div class="container"><h1>Apply online</h1><p>Fill every field. Documents: PDF, JPG, or PNG, up to 2 MB.</p></div></header>
+  <main class="container">
+
+<div id="result"></div>
+<form id="applyForm" class="card" novalidate enctype="multipart/form-data">
+  <div class="form-group"><label for="name">Full name</label><input type="text" id="name" name="name" ><span class="error-msg"></span></div>
+  <div class="form-group"><label for="dob">Date of birth</label><input type="date" id="dob" name="dob" ><span class="error-msg"></span></div>
+  <div class="grid grid-2"><div class="form-group"><label for="phone">Phone (10 digits)</label><input type="tel" id="phone" name="phone" maxlength="10"><span class="error-msg"></span></div><div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" ><span class="error-msg"></span></div></div>
+  <div class="grid grid-2"><div class="form-group"><label for="marks_10">Class 10 marks (%)</label><input type="number" id="marks_10" name="marks_10" min="0" max="100" step="0.1"><span class="error-msg"></span></div><div class="form-group"><label for="marks_12">Class 12 marks (%)</label><input type="number" id="marks_12" name="marks_12" min="0" max="100" step="0.1"><span class="error-msg"></span></div></div>
+  <div class="form-group"><label for="program">Program</label><select id="program" name="program"><option value="">Choose a program</option></select><span class="error-msg"></span></div>
+  <div class="form-group"><label for="document">Documents (PDF, JPG, or PNG, max 2 MB)</label><input type="file" id="document" name="document" accept=".pdf,.jpg,.jpeg,.png"><span class="error-msg"></span></div>
+  <button class="btn" type="submit">Submit application</button>
+</form>
+  </main>
+  <div id="footer"></div>
+  <script src="../js/api.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/apply.js"></script>
+</body>
+</html>

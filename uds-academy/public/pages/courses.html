@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses | UD&apos;S Academy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <header class="page-hero"><div class="container"><h1>Courses and syllabus</h1><p>Programs offered, and syllabus downloads by semester.</p></div></header>
+
+  <main class="container">
+    <section>
+      <h2>Programs</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>Course</th><th>Level</th><th>Duration</th><th>Seats</th><th>Eligibility</th></tr></thead>
+          <tbody id="programs"><tr><td colspan="5">Loading courses...</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Syllabus downloads</h2>
+      <div class="form-group">
+        <label for="dept">Department</label>
+        <select id="dept"></select>
+      </div>
+      <div id="syllabus" class="grid grid-4"></div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="../js/api.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/courses.js"></script>
+</body>
+</html>

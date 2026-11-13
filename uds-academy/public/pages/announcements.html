@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Announcements | UD&apos;S Academy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <header class="page-hero"><div class="container"><h1>Announcements</h1><p>Notices and student news.</p></div></header>
+  <main class="container">
+
+<div class="filters">
+  <div class="form-group"><label for="q">Search</label><input type="search" id="q" placeholder="Search titles"></div>
+  <div class="form-group"><label for="type">Type</label><select id="type"><option value="">All</option><option value="announcement">Announcements</option><option value="student">Student news</option></select></div>
+</div>
+<div class="card"><ul class="news-list" id="list"></ul></div>
+<div class="pager"><button class="btn" id="prev">Previous</button><span id="pageInfo"></span><button class="btn" id="next">Next</button></div>
+  </main>
+  <div id="footer"></div>
+  <script src="../js/api.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/announcements.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event details | UD&apos;S Academy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <header class="page-hero"><div class="container"><h1>Event details</h1><p>Date, place, and registration.</p></div></header>
+  <main class="container">
+<div id="detail"><div class="spinner">Loading event...</div></div>
+<div class="modal-backdrop" id="regModal"><div class="modal">
+  <h3>Register</h3><div id="regMsg"></div>
+  <form id="regForm" novalidate><div class="form-group"><label for="r_name">Your name</label><input type="text" id="r_name" name="r_name" ><span class="error-msg"></span></div><div class="form-group"><label for="r_email">Email</label><input type="email" id="r_email" name="r_email" ><span class="error-msg"></span></div>
+  <button class="btn" type="submit">Register</button> <button class="btn btn-gold" type="button" id="regClose">Close</button></form>
+</div></div>
+  </main>
+  <div id="footer"></div>
+  <script src="../js/api.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/event-detail.js"></script>
+</body>
+</html>
